@@ -54,18 +54,22 @@ class Solution(object):
         for char in s:
 
             # If the character is an closing bracket右括号
-            if char in mapping:
+            # 判断键（右括号）是否在mapping里
+            if char in mapping：
 
                 # Pop the topmost element from the stack, if it is non empty
                 # Otherwise assign a dummy value of '#' to the top_element variable
+                # 如果stack非空，将其弹出
                 top_element = stack.pop() if stack else '#'
 
                 # The mapping for the opening bracket in our hash and the top
                 # element of the stack don't match, return False
+                # 判断弹出的元素是否与本次循环的右括号匹配，若不匹配，则返回false
                 if mapping[char] != top_element:
                     return False
             else:
                 # We have an opening bracket左括号, simply push it onto the stack.
+                # 如果是左括号（新来的一对），将其入栈
                 stack.append(char)
 
         # In the end, if the stack is empty, then we have a valid expression.
@@ -73,5 +77,5 @@ class Solution(object):
         return not stack
 ```
 ## [HashMap](https://blog.csdn.net/Jekin_KE/article/details/83120144)（又称哈希映射或散列图）
-用于存储*一对键值*（Entry）--->相当于字典
+用于存储**一对键值**（Entry）--->相当于字典
 
