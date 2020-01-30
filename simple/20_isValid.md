@@ -11,24 +11,28 @@
 
 输入: "()"
 输出: true
+
 示例 2:
 
 输入: "()[]{}"
 输出: true
+
 示例 3:
 
 输入: "(]"
 输出: false
+
 示例 4:
 
 输入: "([)]"
 输出: false
+
 示例 5:
 
 输入: "{[]}"
 输出: true
 
-#思路：
+# 思路：
 用栈的思想，遍历所有括号，将左括号入栈，遇到匹配的右括号就将对应的左括号弹出。
 ```python
 class Solution(object):
@@ -69,5 +73,5 @@ class Solution(object):
         return not stack
 ```
 ## [HashMap](https://blog.csdn.net/Jekin_KE/article/details/83120144)（又称哈希映射或散列图）
-用于存储* 一对键值 *（Entry）--->相当于字典
+用于存储*一对键值*（Entry）--->相当于字典
 
