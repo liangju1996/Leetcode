@@ -1,10 +1,10 @@
 ## 题目
 使用队列实现栈的下列操作：
 
-push(x) -- 元素 x 入栈
-pop() -- 移除栈顶元素
-top() -- 获取栈顶元素
-empty() -- 返回栈是否为空
+push(x) -- 元素 x 入栈  
+pop() -- 移除栈顶元素  
+top() -- 获取栈顶元素  
+empty() -- 返回栈是否为空  
 ## Note:
 
 你只能使用队列的基本操作-- 也就是 push to back, peek/pop from front, size, 和 is empty 这些操作是合法的。
