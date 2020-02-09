@@ -1,4 +1,3 @@
-！[]()
 ## 题目
 统计所有小于非负整数 n 的质数的数量。
 
@@ -8,7 +7,7 @@
 输出: 4  
 解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。
 
-！[思路](https://github.com/liangju1996/Leetcode/blob/master/picture/204.png)
+![思路](https://github.com/liangju1996/Leetcode/blob/master/picture/204.png)
 ## 思路：
 要得到自然数n以内的全部质数，必须把不大于根号n的所有质数的倍数剔除，剩下的就是质数。
 ```python
